@@ -1,80 +1,52 @@
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import { makeStyles } from '@material-ui/core/styles';
+import Box from '@material-ui/core/Box';
 import Layout from '../components/Layout';
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    padding: theme.spacing(5),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-}));
-
-export default function Home() {
-  const classes = useStyles();
+export default function TestingGrid() {
   return (
     <Layout>
-      <Grid container spacing={2} justify="center" alignItems="center">
-        <Grid item>
-          <Paper className={classes.paper} elevation={8}>
-            1
-          </Paper>
+      <Grid container direction="column" spacing={2}>
+        <Grid item xs={12}>
+          <Grid container justify="space-between" alignItems="center">
+            <Grid item>
+              <Paper>
+                <Box width={50} height={25}>
+                  Logo
+                </Box>
+              </Paper>
+            </Grid>
+            <Grid item>
+              <Paper>
+                <Box width={50} height={25}>
+                  Login
+                </Box>
+              </Paper>
+            </Grid>
+          </Grid>
         </Grid>
-        <Grid item>
-          <Paper className={classes.paper} elevation={8}>
-            2
-          </Paper>
-        </Grid>
-        <Grid item>
-          <Paper className={classes.paper} elevation={8}>
-            3
-          </Paper>
-        </Grid>
-        <Grid item>
-          <Paper className={classes.paper} elevation={8}>
-            4
-          </Paper>
-        </Grid>
-        <Grid item>
-          <Paper className={classes.paper} elevation={8}>
-            5
-          </Paper>
-        </Grid>
-        <Grid item>
-          <Paper className={classes.paper} elevation={8}>
-            6
-          </Paper>
-        </Grid>
-        <Grid item>
-          <Paper className={classes.paper} elevation={8}>
-            7
-          </Paper>
-        </Grid>
-        <Grid item>
-          <Paper className={classes.paper} elevation={8}>
-            8
-          </Paper>
-        </Grid>
-        <Grid item>
-          <Paper className={classes.paper} elevation={8}>
-            9
-          </Paper>
-        </Grid>
-        <Grid item>
-          <Paper className={classes.paper} elevation={8}>
-            10
-          </Paper>
-        </Grid>
-        <Grid item>
-          <Paper className={classes.paper} elevation={8}>
-            11
-          </Paper>
-        </Grid>
-        <Grid item>
-          <Paper className={classes.paper} elevation={8}>
-            12
-          </Paper>
+        <Grid item xs={12}>
+          <Grid
+            container
+            justify="space-between"
+            alignItems="center"
+            spacing={2}
+          >
+            <Grid item xs={12} sm={8}>
+              <Paper>
+                <Box width="100%" height={500}>
+                  Blog Posts
+                </Box>
+              </Paper>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Paper>
+                <Box width="100%" height={500}>
+                  Links
+                </Box>
+              </Paper>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </Layout>

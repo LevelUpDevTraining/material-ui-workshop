@@ -11,7 +11,12 @@ export default function Home() {
         <Grid item>
           <Paper elevation={8}>
             <Box p={5}>
-              <Link href="/grid">Grid</Link>
+              <Box p={1}>
+                <Link href="/container">Container</Link>
+              </Box>
+              <Box p={1}>
+                <Link href="/grid">Grid</Link>
+              </Box>
             </Box>
           </Paper>
         </Grid>
