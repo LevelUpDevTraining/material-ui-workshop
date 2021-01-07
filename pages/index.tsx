@@ -17,6 +17,9 @@ export default function Home() {
               <Box p={1}>
                 <Link href="/grid">Grid</Link>
               </Box>
+              <Box p={1}>
+                <Link href="/box">Box</Link>
+              </Box>
             </Box>
           </Paper>
         </Grid>
