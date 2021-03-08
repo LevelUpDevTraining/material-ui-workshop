@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
-import Layout from '../components/Layout';
+import Layout from '../components/BlueLayout';
 
 export default function Home() {
   return (
